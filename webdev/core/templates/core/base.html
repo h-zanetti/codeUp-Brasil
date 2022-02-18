@@ -34,7 +34,7 @@
     <div class="container">
         <a class="navbar-brand" href="{% url 'core:index' %}" style="margin-top=1em">
             {% comment %} <img src="{% static 'core/images/logo.png' %}" alt="" class="img-fluid b-logo"> {% endcomment %}
-            <h3 class="mb-0" style="color:white"><span>CodeUp</span> Brasil</h3>
+            <h3 class="mb-0" style="color:white;"><span>CodeUp</span> Brasil</h3>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -52,13 +52,13 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link smoth-scroll" href="#about">Sobre Nós</a>
-                </li>
+                </li>{% comment %}
                 <li class="nav-item">
                     <a class="nav-link smoth-scroll" href="#service">Serviços</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link smoth-scroll" href="#pricing">Preços</a>
-                </li>
+                </li>{% endcomment %}
                 {% comment %} <li class="nav-item">
                     <a class="nav-link smoth-scroll" href="#blog">Blog</a>
                 </li> {% endcomment %}
@@ -76,13 +76,14 @@
 <!--  FOOTER AREA START  -->
 <section id="footer" class="section-padding">
     <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
             <div class="col-lg-5 col-sm-8 col-md-8">
                 <div class="footer-widget footer-link">
-                    <h4>We concern about you<br> to grow business rapidly.</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsam hic non sunt recusandae atque unde saepe nihil earum voluptatibus aliquid optio suscipit nobis quia excepturi vel quod, iure quae.</p>
+                    <h4>Nosso foco é crescimento,<br> alavanque sua empresa com tecnologia.</h4>
+                    <p>Faça parte da revolução tecnológica brasileira. O mundo está mudando e é incontestável que a tecnologia é a fonte dessas mudanças. Traga mais competitividade à sua empresa, reinvente-se com ferramentas digitais e análise de dados.</p>
                 </div>
             </div>
+            {% comment %}
             <div class="col-lg-2 col-sm-4 col-md-4">
                 <div class="footer-widget footer-link">
                     <h4>About</h4>
@@ -110,19 +111,20 @@
                     </ul>
                 </div>
             </div>
+            {% endcomment %}
             <div class="col-lg-3 col-sm-6 col-md-6">
                 <div class="footer-widget footer-text">
-                    <h4>Our location</h4>
-                    <p class="mail"><span>Mail:</span> promdise@gmail.com</p>
-                    <p><span>Phone :</span>+202-277-3894</p>
-                    <p><span>Location:</span> 455 West Orchard Street Kings Mountain, NC 28086,NOC building</p>
+                    <h4>Contato</h4>
+                    <p class="mail"><span>Email:</span> contato@codeupbrasil.com.br</p>
+                    <p><span>Telefone :</span> (11) 94464-7420</p>
+                    <p><span>Localização:</span> Campo Belo, São Paulo, SP, Brasil</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 text-center">
                 <div class="footer-copy">
-                    © 2018 Promodise inc. All Rights Reserved.
+                    © 2022 CodeUp Brasil
                 </div>
             </div>
         </div>
